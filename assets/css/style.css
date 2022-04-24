@@ -1,0 +1,77 @@
+html,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.todo {
+  max-width: 600px;
+  margin: 25px auto;
+}
+
+.todo-form {
+  width: 100%;
+  display: flex;
+}
+
+.todo-form input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #eee;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  transition: 0.3s;
+}
+
+.todo-form input:focus,
+.todo-form input:hover {
+  border-color: #219ebc;
+}
+
+.todo-form button {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 25px;
+  background: #219ebc;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.todo-remove {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.todo-remove:hover {
+  opacity: 1;
+  color: #e63946;
+}
+
+.todo-list li span {
+  display: inline-block;
+  width: 50%;
+  white-space:nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li.done {
+  opacity: 0.5;
+}
